@@ -2,11 +2,11 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "newVMName": {
+    "vmname": {
       "type": "string",
       "defaultValue": "AzureMachine"
     },
-    "labName": {
+    "labname": {
       "type": "string",
       "defaultValue": "JulesDevTestLab"
     },
@@ -14,7 +14,7 @@
       "type": "string",
       "defaultValue": "Standard_DS1_v2"
     },
-    "userName": {
+    "username": {
       "type": "string",
       "defaultValue": "JuleAdmin"
     },
