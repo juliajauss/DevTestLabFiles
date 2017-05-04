@@ -31,17 +31,16 @@
     "vmName": "[concat(parameters('labName'), '/', parameters('newVMName'))]",
     "commonSettings": 
     {
-            "constants": {
-                "apiVersions": {
-                  "DevTestLab": "2016-05-15",
-                  "storageAccount": "2016-01-01"
-                }
-            }
+      "apiVersions": {
+        "DevTestLab": "2016-05-15",
+        "storageAccount": "2016-01-01"
+      }
+    }
     }
   },
   "resources": [
     {
-      "apiVersion": "[variables('commonSettings').constants.apiVersions.storageAccount]",
+      "apiVersion": "[variables('commonSettings').apiVersions.DevTestLab]",
       "type": "Microsoft.DevTestLab/labs/virtualmachines",
       "name": "[variables('vmName')]",
       "location": "[resourceGroup().location]",
